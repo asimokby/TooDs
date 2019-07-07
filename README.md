@@ -9,9 +9,9 @@
 4) You can see the done tasks when clicked on the Done at the bottom. 
 5) Finally, you can hit deleteAll button to delete all done tasks. 
 
-<a href=""><img src="https://github.com/asimokby/TooDs/blob/master/screenshots/screen1.png" width="350" height="700"/></a>
+<a href="https://github.com/asimokby/TooDs/blob/master/screenshots/screen1.png"><img src="https://github.com/asimokby/TooDs/blob/master/screenshots/screen1.png" width="350" height="700"/></a>
 
-<a href=""><img src="https://github.com/asimokby/TooDs/blob/master/screenshots/screen2.png" width="350" height="700"/></a>
+<a href="https://github.com/asimokby/TooDs/blob/master/screenshots/screen2.png"><img src="https://github.com/asimokby/TooDs/blob/master/screenshots/screen2.png" width="350" height="700"/></a>
 
 
 
