@@ -13,3 +13,11 @@
 
 <a href=""><img src="https://github.com/asimokby/TooDs/blob/master/screenshots/screen2.png" width="350" height="700"/></a>
 
+
+
+## Install the App
+- Download the project on your computer. 
+- Open the file TooDs.xcodeproj. 
+- Run the project (cmd + R)
+
+
