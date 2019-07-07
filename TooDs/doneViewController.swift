@@ -25,7 +25,7 @@ class doneViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         view.backgroundColor = UIColor.white
         //fetching done toods from the container
-        ToodApp.fetchDoneToods()
+        ToodApp.doneToods = ToodApp.fetchDoneToods()
         //target for delete all button
         deleteAllButton.addTarget(self, action: #selector(deleteAll), for: .touchUpInside)
         
@@ -58,6 +58,8 @@ class doneViewController: UIViewController, UITableViewDelegate, UITableViewData
             if ToodApp.doneToods.count == ToodApp.doneToods.count{
                 
             }
+            
+          
             
             cell?.textLabel?.font = UIElements.fontToUse()
             //setting attributes of the text in the cell

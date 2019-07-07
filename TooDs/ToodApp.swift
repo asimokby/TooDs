@@ -55,27 +55,32 @@ class ToodApp {
         ToodApp.doneToods.removeAll()
         
         //try fetching DoneTood objects and delete all of them
-        let fetchedToods = fetchToDoToods()
+        let fetchedToods = fetchDoneToods()
         for obj in fetchedToods{
             saveTooDs.context.delete(obj)
         }
+        //save changes
+        do{
+            try saveTooDs.context.save()
+        }catch{}
     }
-        static func fetchDoneToods(){
-            do {
-                let fetchRequest: NSFetchRequest<DoneTood> =  DoneTood.fetchRequest()
-                let fetchedToods = try saveTooDs.context.fetch(fetchRequest)
-                ToodApp.doneToods = fetchedToods
-            }catch{}
-            
-        }
+    static func fetchDoneToods() -> [DoneTood]{
+        var fetchedToods: [DoneTood] = []
+        do {
+            let fetchRequest: NSFetchRequest<DoneTood> = DoneTood.fetchRequest()
+            fetchedToods = try saveTooDs.context.fetch(fetchRequest)
+        } catch {}
+        return fetchedToods
         
-        static func fetchToDoToods() -> [Tood]{
-            var fetchedToods: [Tood] = []
-            do {
-                let fetchRequest: NSFetchRequest<Tood> = Tood.fetchRequest()
-                fetchedToods = try saveTooDs.context.fetch(fetchRequest)
-            } catch {}
-            return fetchedToods
-        }
-        
+    }
+    
+    static func fetchToDoToods() -> [Tood]{
+        var fetchedToods: [Tood] = []
+        do {
+            let fetchRequest: NSFetchRequest<Tood> = Tood.fetchRequest()
+            fetchedToods = try saveTooDs.context.fetch(fetchRequest)
+        } catch {}
+        return fetchedToods
+    }
+    
 }

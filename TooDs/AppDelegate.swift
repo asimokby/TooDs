@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Thread.sleep(forTimeInterval: 0.5)
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
-        
+   
         window?.rootViewController = tabBarController()
         
         let font = UIFont(name: "MarkerFelt-Wide" , size: 30.0)

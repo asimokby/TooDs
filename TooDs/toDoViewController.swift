@@ -19,6 +19,7 @@ class toDoViewController: UIViewController , UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         //set background to white
         view.backgroundColor = UIColor.white
         
